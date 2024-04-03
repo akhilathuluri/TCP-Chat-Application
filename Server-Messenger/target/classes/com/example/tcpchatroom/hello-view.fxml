@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.GridPane?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.text.Font?>
+<AnchorPane fx:id="ap_main" fx:controller="com.example.tcpchatroom.HelloController"
+            prefHeight="396" prefWidth="478"
+            xmlns:fx="http://javafx.com/fxml">
+
+    <children>
+        <Button fx:id="button_send" layoutX="404" layoutY="338" text="send"/>
+        <TextField fx:id="tf_message" layoutX="30" layoutY="338"
+                    prefWidth="361" prefHeight="26" />
+        <ScrollPane fx:id="sp_main" layoutY="70" layoutX="30"
+                    prefHeight="256" prefWidth="418" fitToWidth="true">
+            <content>
+                <VBox fx:id="vbox_messages" prefHeight="248"
+                      prefWidth="412"/>
+            </content>
+        </ScrollPane>
+        <Label layoutX="114" layoutY="26" text="Akhil's Messenger">
+            <font>
+                <Font name="Arial Rounded MT Bold" size="23"></Font>
+            </font>
+        </Label>
+    </children>
+
+</AnchorPane>
